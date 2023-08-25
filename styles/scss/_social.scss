@@ -1,0 +1,26 @@
+.social_bar {
+  display: flex;
+  gap: 20px;
+  position: fixed;
+  z-index: 999;
+  bottom: 50px;
+  left: 50px;
+
+  > a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #5c49cd;
+    color: #908bb1;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #FFF;
+      border: 1px solid #624bea;
+    }
+  }
+}

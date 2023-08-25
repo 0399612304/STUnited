@@ -1,0 +1,37 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: transparent;
+  left: 31px;
+  right: 0;
+  height: 70px;
+  padding: 20px 40px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  .header {
+    &__logo {
+      width: 4rem;
+      height: 4rem;
+      position: relative;
+    }
+
+    &__contact {
+      background-image: linear-gradient(to right, #3d73eb, #de8fff 100%);
+      border: none;
+      padding: 0 1.5rem;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 16px;
+      border-radius: 5px;
+      height: 100%;
+      transition: 0.5s;
+      background-size: 130% auto;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-position: right center;
+      }
+    }
+  }
+}

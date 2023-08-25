@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  resize: none;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  position: relative;
+  background: #06072b;
+  color: #fffbfbc9;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  min-width: 700px;
+}
+
+.section {
+  width: 75%;
+  margin: 0 auto;
+  padding: 6rem 1rem 2.5rem 1rem;
+
+  &__heading {
+    margin: 40px 0 70px 0;
+    text-align: center;
+    font-size: 24px;
+    span {
+      text-transform: uppercase;
+      background: linear-gradient(60deg, #3d73eb 13.4%, #de8fff 86.6%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

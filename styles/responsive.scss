@@ -1,0 +1,278 @@
+@media screen and (min-width: 320px) {
+  header {
+    left: -1%;
+  }
+
+  /* Contact Us */
+  .contact {
+    &__form--wrap {
+      display: block;
+    }
+
+    .contact__image {
+      display: none;
+    }
+
+    &__form {
+      width: 100%;
+    }
+
+    &__footer {
+      --f-columns: 1;
+    }
+  }
+
+  /* Sidebar */
+  .social_bar {
+    flex-direction: column;
+    left: 3%;
+    bottom: 3%;
+  }
+
+  .navigations {
+    display: none;
+  }
+
+  /* Solution */
+  .solution {
+    &__container {
+      --f-columns: 1;
+      .content__main {
+        &:hover {
+          transform: none;
+          transition: 0.4s ease-out;
+        }
+      }
+    }
+  }
+
+  /* Service */
+  .services {
+    &__container {
+      --f-columns: 1;
+    }
+  }
+
+  /* Aboute Us */
+  .about {
+    .wrapper {
+      width: 100%;
+      &:nth-child(even) {
+        left: 0;
+      }
+
+      &:nth-child(odd) {
+        left: 0;
+        border-right: none;
+        border-left: 1px solid #eee;
+
+        .date {
+          left: 82px;
+          right: auto;
+        }
+
+        &::before {
+          left: 25px;
+        }
+
+        .content {
+          padding-right: 0;
+          padding-left: 55px;
+          p {
+            text-align: start;
+          }
+        }
+      }
+
+      &::after {
+        left: -17.5px;
+      }
+    }
+  }
+
+  /* Introduce */
+  .introduce {
+    min-height: 70vh;
+    &__section {
+      .shake {
+        .img_wrap {
+          width: 90px;
+          height: 90px;
+        }
+      }
+      .wrapper {
+        padding-left: 0;
+        h1 {
+          span {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    left: 31px;
+  }
+
+  /* Contact Us */
+  .contact {
+    &__form--wrap {
+      display: flex;
+    }
+
+    .contact__image {
+      display: block;
+    }
+
+    &__form {
+      width: 80%;
+    }
+
+    &__footer {
+      --f-columns: 3;
+    }
+  }
+
+  /* Sidebar */
+  .social_bar {
+    flex-direction: column;
+    left: 6%;
+  }
+
+  .navigations {
+    display: flex;
+  }
+
+  /* Solution */
+  .solution {
+    &__container {
+      --f-columns: 2;
+    }
+  }
+
+  /* Service */
+  .services {
+    &__container {
+      --f-columns: 2;
+    }
+  }
+
+  /* Aboute Us */
+  .about {
+    .wrapper {
+      width: 50%;
+      &:nth-child(even) {
+        left: 50%;
+      }
+
+      &:nth-child(odd) {
+        left: 0;
+        border-right: 1px solid #eee;
+        border-left: none;
+
+        .date {
+          right: 82px;
+          left: auto;
+        }
+
+        &::before {
+          left: auto;
+          right: 25px;
+        }
+
+        .content {
+          padding-right: 55px;
+          padding-left: 0;
+          p {
+            text-align: end;
+          }
+        }
+      }
+
+      &::after {
+        right: -17.5px;
+        left: auto;
+      }
+    }
+  }
+
+  /* Introduce */
+  .introduce {
+    min-height: 100vh;
+    &__section {
+      .shake {
+        .img_wrap {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      .wrapper {
+        padding-left: 100px;
+        h1 {
+          span {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* Solution */
+  .solution {
+    &__container {
+      --f-columns: 4;
+
+      .content__main {
+        &:hover {
+          transform: translateY(-20px);
+          transition: 0.4s ease-out;
+        }
+      }
+    }
+  }
+
+  /* Service */
+  .services {
+    &__container {
+      --f-columns: 3;
+    }
+  }
+
+  /* Sidebar */
+  .social_bar {
+    flex-direction: column;
+    left: 4%;
+  }
+
+  /* Introduce */
+  .introduce {
+    min-height: 100vh;
+    &__section {
+      .shake {
+        .img_wrap {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      .wrapper {
+        padding-left: 100px;
+        h1 {
+          span {
+            font-size: 60px;
+          }
+        }
+      }
+    }
+  }
+}
