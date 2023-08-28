@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import contactImage from '../images/contact.png'
 
-const Contact = ({ id, footer }) => {
+const ContactKorean = ({ id, footer }) => {
   const [values, setValues] = useState({
     email: '',
     message: '',
@@ -49,7 +49,7 @@ const Contact = ({ id, footer }) => {
     <div data-aos="fade-up" className="contact section" id={id}>
       <div className="section__heading section__loading">
         <h2>
-          <span>CONTACT</span> US
+          <span>연락처</span>
         </h2>
         {submit && (
           <div className="lds-heart ">
@@ -62,14 +62,14 @@ const Contact = ({ id, footer }) => {
           <Image src={contactImage} alt="ST United" width={900} height={700} />
         </div>
         <div className="contact__form">
-          <p>If &quot;US&quot; is what are you looking, please Reach Out!</p>
+          <p>언제든지 답변할 준비가 되어 있습니다</p>
           <form action="/send-data-here" method="post" className=" send__data" onSubmit={handleOnSubmit}>
             <div className="form__item">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">전자메일</label>
               <input id="email" type="email" name="email" value={email} required onChange={handleChange} />
             </div>
             <div className="form__item">
-              <label required>Your message</label>
+              <label required>문의사항</label>
               <textarea id="message" type="text" name="message" value={message} required onChange={handleChange} />
             </div>
             <button type="submit" className="button__submit">
@@ -96,4 +96,4 @@ const Contact = ({ id, footer }) => {
   )
 }
 
-export default Contact
+export default ContactKorean

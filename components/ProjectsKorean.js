@@ -9,7 +9,7 @@ import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { MAPS } from '../stores/maps'
 
-const Projects = ({ id, projects, customers }) => {
+const ProjectsKorean = ({ id, projects, customers }) => {
   const navigationPrevRef = useRef(null)
   const navigationNextRef = useRef(null)
 
@@ -42,7 +42,7 @@ const Projects = ({ id, projects, customers }) => {
     <div data-aos="fade-up" className="section projects" id={id}>
       <div className="section__heading">
         <h2>
-          OUR <span>PROJECTS</span>
+        <span>프로젝트</span>수행 국가 
         </h2>
       </div>
       <div className="description">The projects we have been working on:</div>
@@ -97,9 +97,8 @@ const Projects = ({ id, projects, customers }) => {
       </ComposableMap>
       <div className="customer">
         <div className="toast">
-          Trusted by the
           <span className="here">
-            <a href="#contact"> Clients &amp; Partners </a>
+            <a href="#contact"> 주요고객 &amp; 파트너 </a>
           </span>
         </div>
         <div className="swiper_button">
@@ -124,4 +123,4 @@ const Projects = ({ id, projects, customers }) => {
   )
 }
 
-export default Projects
+export default ProjectsKorean

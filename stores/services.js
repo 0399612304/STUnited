@@ -6,6 +6,45 @@ import { SiBmcsoftware } from 'react-icons/si'
 export const SERVICES = [
   {
     icon: <MdWebAsset className="icon" />,
+    title: 'Web App Development',
+    content:
+      'We design tailored web apps for any size or complexity, from startups to enterprise solutions',
+  },
+  {
+    icon: <AiOutlineMobile className="icon" />,
+    title: 'Mobile App Development',
+    content:
+      'ST offers custom mobile app development for consumer and enterprise environments on iOS and Android platforms',
+  },
+  {
+    icon: <SiBmcsoftware className="icon" />,
+    title: 'Custom Software Development',
+    content:
+      " ST offers top-notch software development services that are tailored to your specific needs, budget, and timeline. We take pride in our ability to compete with other firms based on our commitment to quality, creativity, and dedication while still providing cost-effective and reliable solutions",
+  },
+  {
+    icon: <AiOutlineTeam className="icon" />,
+    title: 'Dedicated Team',
+    content:
+      'Our team of experts works directly with you to cover every aspect of the software development cycle, from design and development to testing and support for your product system',
+  },
+  {
+    icon: <MdOutlineCampaign className="icon" />,
+    title: 'Coaching and Training Service',
+    content:
+      'Our experienced trainers and coaches possess practical international experience and can assist you in adopting Agile practices, enhancing quality, and increasing business value to succeed with Scrum or other Agile and scaled frameworks and methodologies that are tailored to your specific needs',
+  },
+  {
+    icon: <BiBuildingHouse className="icon" />,
+    title: 'Startup Incubation',
+    content:
+      'Our program provides vast resources for entrepreneurs in Vietnam, focusing on ecosystem building, co-working spaces and incubation programs',
+  },
+]
+
+export const SERVICESKOREAN = [
+  {
+    icon: <MdWebAsset className="icon" />,
     title: '웹 어플리케이션 개발',
     content:
       '소규모 솔루션과 대규모 솔루션 구분없이 웹 어플리케이션 개발 가능',
